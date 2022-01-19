@@ -4,8 +4,12 @@ def interface():
     while key:
         print("Options:")
         print("9 - Quit")
+        print("8 - Analyze HDL")
         choice = input("Enter your choice: ")
         if choice=='9':
+            key = FALSE
+        if choice=='8':
+            HDL_Driver
             key = FALSE
     return
     

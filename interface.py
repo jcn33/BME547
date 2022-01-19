@@ -22,6 +22,13 @@ def analyze_input(value):
         answer = "Low"
     return answer
     
+def output(status):
+    print(status)
+    
+def HDL_Driver():
+    HDL = accept_input("HDL")
+    status = analyze_input(HDL)
+    output(status)
+    
 interface()
-HDL = accept_input()
-analyze_input(HDL)
+

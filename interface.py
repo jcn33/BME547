@@ -6,6 +6,7 @@ def interface():
         print("9 - Quit")
         print("8 - Analyze HDL")
         print("7 - Analyze LDL")
+        print("6 - Analyze Total Cholesterol")
         choice = input("Enter your choice: ")
         if choice=='9':
             key = False
@@ -15,12 +16,24 @@ def interface():
         if choice=='7':
             LDL_Driver()
             key = False
+        if choice=='6':
+            Total_Driver()
+            key = False
     return
     
 def accept_input(test):
     entry = input("Enter the {} test result: ".format(test))
     return int(entry)
     
+def analyze_CT(value):
+    if value < 200:
+        answer = "Normal"
+    elif 240 > value >= 200:
+        answer = "Borderline High"
+    else:
+        answer = "High"
+    return answer
+   
 def analyze_LDL(value):
     if value >= 190:
         answer = "Very High"
@@ -31,6 +44,7 @@ def analyze_LDL(value):
     else:
         answer = "Normal"
     return answer
+
     
 def analyze_HDL(value):
     if value >= 60:
@@ -52,6 +66,11 @@ def HDL_Driver():
 def LDL_Driver():
     LDL = accept_input("LDL")
     status = analyze_LDL(LDL)
+    output(status)
+    
+def Total_Driver():
+    Total = accept_input("Total Cholesterol")
+    status = analyze_TC(Total)
     output(status)
     
 interface()

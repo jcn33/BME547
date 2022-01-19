@@ -18,6 +18,17 @@ def accept_input(test):
     return int(entry)
     
 def analyze_HDL(value):
+    if value >= 190:
+        answer = "Very High"
+    elif 190 > value >= 160:
+        answer = "High"
+    elif 160 > value >= 130:
+        answer = "Borderline High"
+    else:
+        answer = "Normal"
+    return answer
+    
+def analyze_LDL(value):
     if value >= 60:
         answer = "Normal"
     elif 60 > value >= 40:

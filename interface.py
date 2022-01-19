@@ -17,7 +17,7 @@ def accept_input(test):
     entry = input("Enter the {} test result: ".format(test))
     return int(entry)
     
-def analyze_input(value):
+def analyze_HDL(value):
     if value >= 60:
         answer = "Normal"
     elif 60 > value >= 40:
@@ -31,7 +31,12 @@ def output(status):
     
 def HDL_Driver():
     HDL = accept_input("HDL")
-    status = analyze_input(HDL)
+    status = analyze_HDL(HDL)
+    output(status)
+
+def LDL_Driver():
+    LDL = accept_input("LDL")
+    status = analyze_LDL(LDL)
     output(status)
     
 interface()

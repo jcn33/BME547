@@ -18,7 +18,7 @@ def accept_input(test):
     return int(entry)
     
 def analyze_input(value):
-    if value >= 60
+    if value >= 60:
         answer = "Normal"
     elif 60 > value >= 40:
         answer = "Borderline Low"

@@ -7,10 +7,10 @@ def interface():
         print("8 - Analyze HDL")
         choice = input("Enter your choice: ")
         if choice=='9':
-            key = FALSE
+            key = False
         if choice=='8':
             HDL_Driver
-            key = FALSE
+            key = False
     return
     
 def accept_input(test):

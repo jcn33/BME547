@@ -25,7 +25,7 @@ def accept_input(test):
     entry = input("Enter the {} test result: ".format(test))
     return int(entry)
     
-def analyze_CT(value):
+def analyze_TC(value):
     if value < 200:
         answer = "Normal"
     elif 240 > value >= 200:

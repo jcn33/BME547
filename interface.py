@@ -13,6 +13,15 @@ def accept_input(test):
     entry = input("Enter the {} test result: ".format(test))
     return int(entry)
     
+def analyze_input(value):
+    if value >= 60
+        answer = "Normal"
+    elif 60 > value >= 40:
+        answer = "Borderline Low"
+    else:
+        answer = "Low"
+    return answer
     
-accept_input()
 interface()
+HDL = accept_input()
+analyze_input(HDL)

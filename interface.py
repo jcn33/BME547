@@ -5,11 +5,15 @@ def interface():
         print("Options:")
         print("9 - Quit")
         print("8 - Analyze HDL")
+        print("7 - Analyze LDL")
         choice = input("Enter your choice: ")
         if choice=='9':
             key = False
         if choice=='8':
             HDL_Driver()
+            key = False
+        if choice=='7':
+            LDL_Driver()
             key = False
     return
     

@@ -21,7 +21,7 @@ def accept_input(test):
     entry = input("Enter the {} test result: ".format(test))
     return int(entry)
     
-def analyze_HDL(value):
+def analyze_LDL(value):
     if value >= 190:
         answer = "Very High"
     elif 190 > value >= 160:
@@ -32,7 +32,7 @@ def analyze_HDL(value):
         answer = "Normal"
     return answer
     
-def analyze_LDL(value):
+def analyze_HDL(value):
     if value >= 60:
         answer = "Normal"
     elif 60 > value >= 40:

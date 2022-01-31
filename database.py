@@ -7,10 +7,23 @@ import interface as it              #__name__ variable in interface code = "inte
 #Can avoid complications with 
 # if __name__ == "__main__"
 
-HDL = 55
-classif = analyze_HDL(HDL)
-print("{} is {}".format(HDL, classif))
+def add_patient(name, id, age):
+    patient = [name, id, age, []]
+    return patient
 
+def main():
+    db = []
+    x = add_patient("AA", 340, 40)
+    
+    #first item of db is a list
+    #second item is another patient list
+    # db[-1] = last item in list
+    
+    db.append(x)
+    
+    s = "abcdef"
+    print(s[0:5:2])
 
-
+if __name__ == "__main__":
+    main()
 

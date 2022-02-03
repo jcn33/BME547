@@ -12,9 +12,9 @@ import pytest
 	[(0,-1), (-1,0), 2, -3], #negative values
 	[(0,0), (1,-1), "3", -3], #strings
 	[(0,0), (1,"-1"), 3, -3], #strings
-	[(0,0), (.1,-.3), "1.5", -4.5], #decimals
+	[(0,0), (.1,-.3), "1.5", -4.5]] #decimals
 	)
 def test_yfinder(p1, p2, x, y):
     from line_checker import yfinder
     ans = yfinder(p1, p2, x)
-    assert ans == y
+    assert ans == pytest.approx(y)

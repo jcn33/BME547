@@ -73,5 +73,9 @@ def Total_Driver():
     status = analyze_TC(Total)
     output(status)
     
-interface()
+def main():
+    return 0
+    
+if __name__ == "__main__":
+    main()
 

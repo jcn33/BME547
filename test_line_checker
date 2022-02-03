@@ -1,0 +1,9 @@
+import pytest
+
+@pytest.mark.parametrize("p1, p2, x, y", [
+    [(,), (,), , ],
+	)
+def test_yfinder(p1, p2, x, y):
+    from line_checker import yfinder
+    ans = yfinder(p1, p2, x)
+    assert ans == y

@@ -1,3 +1,4 @@
+
 class Patient:
     
     def __init__(self, name, id_no, age, dob = None):   #default value so that you don't need to use a variable
@@ -8,9 +9,6 @@ class Patient:
         self.id = id_no
         self.age = age
         self.tests = []
-        
-    def __repr__(self) #Self must be a variable for all class methods
-        return "Patient: {}, {}".format(self.name, self.id)
         
     def output_patient(self):
         outstr = "Name: {}\n".format(self.name)
@@ -36,6 +34,14 @@ def add_patient(name, id_no, age):
     
     new_patient = Patient(name, id_no, age)
     return new_patient
+
+def HDL_mod(HDL, LDL):
+    from math import sqrt
+    DL = sqrt(HDL*HDL + LDL*LDL)
+    return DL
+    
+
+"""
     
 def output_database(db):
     for patient in db:
@@ -46,7 +52,8 @@ def find_patient(db, id_no):
 
 
 def add_test(db, id_no, test_name, test_res):
-    patient = 
+
+"""
    
 def main():
     db = []
@@ -54,8 +61,8 @@ def main():
     db.append(x)
     print(db)
     
-    found_patient = find_patient(db, 111)   ##Returns patient object, self-type variable
-    print(found_patient.output_patient)     ##calls method on patient to format into correct string
+    #found_patient = find_patient(db, 111)   ##Returns patient object, self-type variable
+    #print(found_patient.output_patient)     ##calls method on patient to format into correct string
     
     ## Whats the difference between a class method and a code function (where in file)
     
